@@ -1,8 +1,16 @@
+# This is a sample properties file for getting up and running quickly 
 spring.datasource.driverClassName=com.mysql.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/testdb
 spring.datasource.username=testuser
 spring.datasource.password=testpassword
 
+
 spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
 spring.jpa.show-sql=false
+
+
+# Hibernate can create the schema for you by commenting out 
+# the line with "spring.jpa.hibernate.ddl-auto=validate" and activating
+# this next line in its place
+# spring.jpa.hibernate.ddl-auto=create
 spring.jpa.hibernate.ddl-auto=validate
