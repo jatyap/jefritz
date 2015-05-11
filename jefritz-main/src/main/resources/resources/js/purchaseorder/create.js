@@ -1,8 +1,9 @@
 $(document).ready(function() {
+	
+	// populates price with current default every time the product is selected
 	$('.product').change(
 			function(e){
 				var price = getPrice($(this).val());
-				alert(price);
 				$(this).parent().next().contents().filter('.price').val(price);
 			}
 	);

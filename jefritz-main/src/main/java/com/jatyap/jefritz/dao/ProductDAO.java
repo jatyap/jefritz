@@ -6,8 +6,8 @@ import com.jatyap.jefritz.entity.Product;
 
 public interface ProductDAO {
 
-	public void saveProduct(Product product);
 	public List<Product> listProducts();
+	public void saveProduct(Product product);
 	public Product getProduct(String productId);
 	public void deleteProduct(String productId);
 }
