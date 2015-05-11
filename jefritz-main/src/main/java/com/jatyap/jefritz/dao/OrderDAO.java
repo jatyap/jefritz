@@ -2,9 +2,9 @@ package com.jatyap.jefritz.dao;
 
 import java.util.List;
 
-import com.jatyap.jefritz.model.Order;
-import com.jatyap.jefritz.model.OrderDetail;
-import com.jatyap.jefritz.model.OrderType;
+import com.jatyap.jefritz.entity.Order;
+import com.jatyap.jefritz.entity.OrderDetail;
+import com.jatyap.jefritz.entity.OrderType;
 
 public interface OrderDAO {
 	

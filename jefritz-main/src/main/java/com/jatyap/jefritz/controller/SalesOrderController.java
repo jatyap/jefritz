@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.jatyap.jefritz.dao.SalesOrderDAO;
-import com.jatyap.jefritz.model.SalesOrder;
+import com.jatyap.jefritz.entity.SalesOrder;
 
 @Controller
 public class SalesOrderController {

@@ -11,9 +11,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.jatyap.jefritz.dao.ProductDAO;
 import com.jatyap.jefritz.dao.ProductPricingDAO;
-import com.jatyap.jefritz.model.Product;
-import com.jatyap.jefritz.model.ProductPricing;
-import com.jatyap.jefritz.model.PurchaseProductPricing;
+import com.jatyap.jefritz.entity.Product;
+import com.jatyap.jefritz.entity.ProductPricing;
+import com.jatyap.jefritz.entity.PurchaseProductPricing;
 
 @Controller
 public class PurchasePricingController {

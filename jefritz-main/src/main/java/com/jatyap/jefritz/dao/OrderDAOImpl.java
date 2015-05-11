@@ -6,9 +6,9 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.jatyap.jefritz.model.Order;
-import com.jatyap.jefritz.model.OrderDetail;
-import com.jatyap.jefritz.model.OrderType;
+import com.jatyap.jefritz.entity.Order;
+import com.jatyap.jefritz.entity.OrderDetail;
+import com.jatyap.jefritz.entity.OrderType;
 
 public class OrderDAOImpl extends BaseDAOImpl implements OrderDAO {
 

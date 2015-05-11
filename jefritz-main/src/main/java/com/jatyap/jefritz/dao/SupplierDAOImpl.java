@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import com.jatyap.jefritz.model.Supplier;
+import com.jatyap.jefritz.entity.Supplier;
 
 public class SupplierDAOImpl implements SupplierDAO{
 

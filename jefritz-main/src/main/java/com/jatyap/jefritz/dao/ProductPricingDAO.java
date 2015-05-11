@@ -3,7 +3,7 @@ package com.jatyap.jefritz.dao;
 import java.util.Date;
 import java.util.List;
 
-import com.jatyap.jefritz.model.ProductPricing;
+import com.jatyap.jefritz.entity.ProductPricing;
 
 public interface ProductPricingDAO {
 	public List<ProductPricing> listProductPricing(Date referenceDate);

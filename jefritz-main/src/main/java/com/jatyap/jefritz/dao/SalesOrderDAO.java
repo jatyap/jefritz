@@ -2,7 +2,7 @@ package com.jatyap.jefritz.dao;
 
 import java.util.List;
 
-import com.jatyap.jefritz.model.SalesOrder;
+import com.jatyap.jefritz.entity.SalesOrder;
 
 public interface SalesOrderDAO {
 	public List<SalesOrder> getOrders();

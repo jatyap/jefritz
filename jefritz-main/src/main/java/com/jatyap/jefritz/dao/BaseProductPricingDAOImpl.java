@@ -9,9 +9,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.jatyap.jefritz.model.Product;
-import com.jatyap.jefritz.model.ProductPricing;
-import com.jatyap.jefritz.model.ProductPricingType;
+import com.jatyap.jefritz.entity.Product;
+import com.jatyap.jefritz.entity.ProductPricing;
+import com.jatyap.jefritz.entity.ProductPricingType;
 
 public abstract class BaseProductPricingDAOImpl implements ProductPricingDAO {
 

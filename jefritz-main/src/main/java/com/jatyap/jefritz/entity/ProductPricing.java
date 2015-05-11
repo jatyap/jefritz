@@ -1,4 +1,4 @@
-package com.jatyap.jefritz.model;
+package com.jatyap.jefritz.entity;
 
 import java.math.BigDecimal;
 import java.util.Date;

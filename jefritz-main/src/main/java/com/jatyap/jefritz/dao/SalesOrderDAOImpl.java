@@ -6,7 +6,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.jatyap.jefritz.model.SalesOrder;
+import com.jatyap.jefritz.entity.SalesOrder;
 
 public class SalesOrderDAOImpl extends BaseDAOImpl implements SalesOrderDAO {
 

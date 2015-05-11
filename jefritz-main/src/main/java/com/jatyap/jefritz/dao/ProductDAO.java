@@ -2,7 +2,7 @@ package com.jatyap.jefritz.dao;
 
 import java.util.List;
 
-import com.jatyap.jefritz.model.Product;
+import com.jatyap.jefritz.entity.Product;
 
 public interface ProductDAO {
 

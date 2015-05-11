@@ -1,4 +1,4 @@
-package com.jatyap.jefritz.model;
+package com.jatyap.jefritz.entity;
 
 public enum ProductPricingType {
 	PURCHASE("PurchaseProductPricing"), SALES("SalesProductPricing");

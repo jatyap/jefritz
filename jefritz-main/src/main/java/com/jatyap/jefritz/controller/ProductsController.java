@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.jatyap.jefritz.dao.ProductDAO;
-import com.jatyap.jefritz.model.Product;
+import com.jatyap.jefritz.entity.Product;
 
 @Controller
 public class ProductsController {

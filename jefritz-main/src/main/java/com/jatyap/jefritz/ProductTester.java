@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.jatyap.jefritz.dao.ProductDAO;
-import com.jatyap.jefritz.model.Product;
+import com.jatyap.jefritz.entity.Product;
 
 public class ProductTester {
 

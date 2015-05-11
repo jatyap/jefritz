@@ -6,7 +6,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.jatyap.jefritz.model.Product;
+import com.jatyap.jefritz.entity.Product;
 
 public class ProductDAOImpl extends BaseDAOImpl implements ProductDAO {
 
