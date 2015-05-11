@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Purchase Pricing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Products Purchase Pricing</h1>
+	<a href="/products/purchasepricing/new">New Pricing</a>
+	<form>
+	<table>
+		<tr th:each="pricing:${pricelist}">
+			<td th:text="${pricing.product.productName}" />
+			<td th:text="${pricing.price}"/>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

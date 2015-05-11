@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Purchase Pricing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>New Purchase Pricing</h1>
+	<table>
+		<tr th:each="prod:${products}">
+			<td th:text="${prod.productId}"></td>
+			<td th:text="${prod.productName}"></td>
+		</tr>
+	</table>
+	<form id="new-purchase-pricing" role="form"
+		th:action="@{/products/purchasepricing/save}" method="post"
+		th:object="${productPricing}">
+		<div>
+			<select id="product" th:field="${productPricing.product.productId}">
+				<option th:each="prod:${products}" th:value="${prod.productId}"
+					th:text="${prod.productName}" />
+			</select>
+		</div>
+		<div>
+			<label for="price">Price</label> <input type="text" id="price"
+				name="price" th:field="${productPricing.price}" />
+		</div>
+		<div>
+			<button type="submit">Save</button>
+		</div>
+	</form>
+</body>
+</html>
