@@ -43,11 +43,14 @@ public abstract class BaseProductPricingDAOImpl implements ProductPricingDAO {
 		String productId = newPricing.getProduct().getProductId();
 		Date startDate = newPricing.getValidFrom();
 		Date endDate = newPricing.getValidTo();
+		if(null == startDate){
+			throw new IllegalArgumentException("Pricing must have a valid start date");
+		}
 		ProductPricing beforePricing = this.getPricing(productId, startDate);
 		ProductPricing afterPricing = null;
-		if(null != endDate){
-			afterPricing = this.getPricing(productId, endDate);
-		}
+		afterPricing = (null != endDate) ? this.getPricing(productId, endDate)
+				: null;
+
 		Session session = this.sessionFactory.openSession();
 		Transaction tx = session.beginTransaction();
 
@@ -62,11 +65,10 @@ public abstract class BaseProductPricingDAOImpl implements ProductPricingDAO {
 			afterPricing.setValidFrom(endDate);
 			session.persist(afterPricing);
 		}
- 
+
 		// Load the product in the ProductPricing
-		Product prod = (Product) session.get(Product.class, newPricing.getProduct().getProductId());
-		newPricing.setProduct(prod);
-		
+		newPricing.setProduct((Product) session.get(Product.class, productId));
+
 		session.persist(newPricing);
 		tx.commit();
 		session.close();

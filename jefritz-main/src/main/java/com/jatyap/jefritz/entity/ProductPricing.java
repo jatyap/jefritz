@@ -25,10 +25,6 @@ public abstract class ProductPricing {
 	protected Date validTo = null;
 
 	protected BigDecimal price;
-	
-	public ProductPricing(){
-		this.product = new Product();
-	}
 
 	public int getPricingId() {
 		return pricingId;

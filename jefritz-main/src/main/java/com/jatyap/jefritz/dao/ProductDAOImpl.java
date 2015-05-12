@@ -29,13 +29,13 @@ public class ProductDAOImpl extends BaseDAOImpl implements ProductDAO {
 	}
 
 	@Override
-	@SuppressWarnings("unchecked")
 	public Product getProduct(String productId) {
 		Session session = this.getSessionFactory().openSession();
-		Query query = session.createQuery("from Product P where P.productId = :productId");
-		query.setString("productId", productId);
-		List<Product> productList = query.list();
-		Product prod = productList.get(0);
+//		Query query = session.createQuery("from Product P where P.productId = :productId");
+//		query.setString("productId", productId);
+//		List<Product> productList = query.list();
+//		Product prod = productList.get(0);
+		Product prod = (Product) session.get(Product.class, productId);
 		session.close();
 		
 		return prod;
